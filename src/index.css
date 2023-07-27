@@ -16,7 +16,6 @@ code {
 .header{
   height: 100%;
   width: 100%;
-  padding: 5px;
   background-color: rgb(249, 252, 71);
 }
 .header img{
@@ -84,22 +83,19 @@ code {
 }
 
 .note_container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 10px;
-
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 15px;
 }
 
 .note{
-  /* border: 2px solid green; */
-  width: 20%;
-  padding: 10px;
-  margin: 18px;
-  box-shadow: 0 2px 4px rgba(0, 0.2, 0, 0.3);
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
+  width: 80%;
+    padding: 10px;
+    margin: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0.2, 0, 0.3);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
 }
 .note:hover{
   background-color: rgb(242, 242, 242);
@@ -112,8 +108,9 @@ code {
   color: rgb(249, 252, 71);
   font-size: larger;
   padding: 5px;
-  margin-top: 20px;
-  margin-left: 250px;
+  margin-top: 30px;
+    margin-left: 14px;
+    margin-bottom: 5px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -135,4 +132,29 @@ code {
   /* padding: 20px; */
 }
 
+
+/* RESPONSIVENESS CSS */
+@media (max-width: 850px) {
+  .note_container{
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  .main_note form{
+    width: 40%;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .note_container{
+      grid-template-columns: 1fr;
+  }
+  .note{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 28px;
+  }
+  .main_note form{
+    width: 40%;
+  }
+}
 
