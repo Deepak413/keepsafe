@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# KeepSafe
+
+Developed a google-keep-clone to store user's to-do tasks. Add and Delete functionality available.
+
+Webapp Screenshots : 
+![Screenshot (464)](https://github.com/Deepak413/weatherfinder/assets/98450154/d3926b92-06cf-47bf-bf35-243f13f85408)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
